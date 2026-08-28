@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Create Account</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<div class="stage">
+  <div class="card">
+
+    <div class="logo-wrap">
+      <!-- sun / star swirl logo -->
+      <svg viewBox="0 0 100 100" fill="none">
+        <path transform="rotate(0 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(45 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(90 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(135 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(180 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(225 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(270 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <path transform="rotate(315 50 50)" d="M 50 50 C 47 36, 48 20, 50 10 C 59 20, 57 38, 50 50 Z" fill="var(--navy)" stroke="var(--navy)" stroke-width="0.6" stroke-linejoin="round"/>
+        <circle cx="50" cy="50" r="6" fill="var(--accent)" stroke="var(--navy)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <h1>Create account</h1>
+
+    <form action="#" method="post">
+      <div class="field">
+        <label for="su-email">Email</label>
+        <div class="input-row">
+          <input id="su-email" name="email" type="email" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="su-pass">Password</label>
+        <div class="input-row">
+          <input id="su-pass" name="password" type="password" required>
+        </div>
+        <div class="match-msg">Please Confirm Password</div>
+      </div>
+
+      <div class="field">
+        <label for="su-confirm">Confirm password</label>
+        <div class="input-row">
+          <input id="su-confirm" name="confirm_password" type="password" required>
+        </div>
+      </div>
+
+      <button type="submit" class="primary">Sign up &rarr;</button>
+    </form>
+
+    <p class="switch-line">Already have an account? <a href="login.html" class="link">Sign in</a></p>
+
+  </div>
+</div>
+
 </body>
 </html>

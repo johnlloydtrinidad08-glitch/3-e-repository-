@@ -1,0 +1,147 @@
+:root{
+  --ink:#1b1a2e;
+  --ink-soft:#585670;
+  --bg:#f6f4ee;
+  --card:#ffffff;
+  --line:#e3e0d6;
+  --accent:#e0862e;
+  --accent-deep:#c96a1a;
+  --navy:#2b2a4a;
+  --ok:#3f8f5f;
+  --radius:18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+  color: var(--ink);
+  padding: 32px 16px;
+}
+
+.stage {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 40px 32px 32px;
+  box-shadow: 0 24px 60px -30px rgba(43, 42, 74, .35);
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.logo-wrap svg {
+  width: 64px;
+  height: 64px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  margin: 6px 0 28px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: var(--navy);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.input-row {
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 6px;
+}
+
+.input-row input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.match-msg {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ok);
+}
+
+.switch-line {
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-top: 22px;
+}
+
+.link {
+  color: var(--accent-deep);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+button.primary {
+  margin-top: 6px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+  color: #fff;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .03em;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  opacity: .9;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 32px 22px 26px;
+  }
+}
